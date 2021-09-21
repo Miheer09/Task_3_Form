@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<script src="Task_3.js"></script>
+
+		<style>
+			div {
+				box-sizing: border-box;
+				width: 100%;
+				border: 100px solid black;
+				float: left;
+				align-content: center;
+				align-items: center;
+			}
+
+			form {
+				margin: 0 auto;
+				width: 600px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1 style="text-align: center;">REGISTRATION FORM</h1>
+		<form name="Form" onsubmit="return IpForm()" method="post">
+			<p>Name: <input type="text"
+							size="65" name="Name" id="Name"/></p>
+			<br />
+			<p>Roll No: <input type="text"
+							size="65" name="RollNo" />
+		</p>
+			<br />
+			<p>E-mail Id: <input type="text"
+							size="65" name="EMail" /></p>
+			<br />
+		
+			<br />
+			<p>Phone No: <input type="text"
+						size="65" name="phone" /></p>
+			<br />
+            <p> Gender: 
+                <input type="radio" name="Gender" value="Male" id="Male">
+                <label for ="Male">Male</label>
+                <input type="radio" name="Gender" value="Female" id="Female">
+                <Label for ="Female">Female</Label>
+            </p>
+            
+			<p>
+				Select Your Branch:
+				<select type="text" value="" name="Subject">
+					<option>Comp</option>
+					<option>Mech</option>
+					<option>Civil</option>
+					<option>Extc</option>
+					<option>ITNT</option>
+				</select>
+			</p>
+            <p> Select Your Div:
+                <input type="radio" name="choice" value="A" id="choice-A"> 
+        <label for="choice-A">A</label>
+        <input type="radio" name="choice" value="B" id="choice-B">
+        <label for="choice-B">B</label>
+            </p>
+            <p>Select Languages You Can Speak:<br>
+                <input type="checkbox" name="Lang" value="Hindi">Hindi<br>
+                <input type="checkbox" name="Lang" value="English">English<br>
+                <input type="checkbox" name="Lang" value="Marathi">Marathi<br>
+                <input type="checkbox" name="Lang" value="French">French<br>
+                <input type="checkbox" name="Lang" value="Russian">Russian<br>
+            </p>
+            <p><label for="country">Country:</label></p>
+<p><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="In">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+<option value="Fr">France</option>
+</select></li>
+</p>
+			<br />
+			<br />
+			
+			<p style="text-align: center;">
+				<input type="submit"
+					value="Submit" name="Submit" />
+				
+			</p>
+		</form>
+	</body>
+</html>
